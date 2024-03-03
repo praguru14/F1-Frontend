@@ -1,0 +1,37 @@
+<form [formGroup]="cricbuzzForm" (ngSubmit)="submitForm()">
+    <div>
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" formControlName="title" required>
+    </div>
+    <div>
+        <label for="updateInput">Update:</label>
+        <input type="text" id="updateInput" formControlName="update" required>
+    </div>
+    <div>
+        <label for="livescoreInput">Live Score:</label>
+        <input type="text" id="livescoreInput" formControlName="livescore" required>
+    </div>
+    <div>
+        <label for="runrateInput">Run Rate:</label>
+        <input type="text" id="runrateInput" formControlName="runrate" required>
+    </div>
+    <div>
+        <label for="batterOneInput">Batter One:</label>
+        <input type="text" id="batterOneInput" formControlName="batterone" required>
+    </div>
+    <div>
+        <label for="batsmanOneRunInput">Batsman One Run:</label>
+        <input type="text" id="batsmanOneRunInput" formControlName="batsmanonerun" required>
+    </div>
+    <div>
+        <label for="batsmanOneBallInput">Batsman One Ball:</label>
+        <input type="text" id="batsmanOneBallInput" formControlName="batsmanoneball" required>
+    </div>
+    <div>
+        <label for="batsmanOneSRInput">Batsman One Strike Rate:</label>
+        <input type="text" id="batsmanOneSRInput" formControlName="batsmanonesr" required>
+    </div>
+    <!-- Add more input fields for other form controls -->
+
+    <button type="submit" [disabled]="!cricbuzzForm.valid">Submit</button>
+</form>

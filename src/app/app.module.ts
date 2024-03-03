@@ -3,11 +3,13 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CricbuzzFormComponent } from './cricbuzz-form/cricbuzz-form.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+    CricbuzzFormComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule
